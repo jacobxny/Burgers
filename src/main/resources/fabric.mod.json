@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "erstemod",
+	"version": "1",
+	"name": "Burgers",
+	"description": "Adds Burgers",
+	"authors": [
+		"Lordjayda"
+	],
+	"contributors": [
+		"John Seagull",
+		"Crazy10061",
+		"jacobnxy"
+	],
+	"contact": {
+		"sources": "https://github.com/Lordjayda/Burgers"
+	},
+	"license": "Mit",
+	"icon": "assets/erstemod/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.lordjayda.erstemod.Erstemod"
+		],
+		"client": [
+			"net.lordjayda.erstemod.ErstemodClient"
+		],
+		"fabric-datagen": [
+			"net.lordjayda.erstemod.ErstemodDataGenerator"
+		]
+	},
+	"mixins": [
+		"erstemod.mixins.json"	],
+	"depends": {
+		"fabricloader": ">=0.19.3",
+		"minecraft": "~26.3",
+		"java": ">=25",
+		"fabric-api": "*"
+	}
+}
